@@ -1,0 +1,320 @@
+/*mixins*/
+@mixin .section-header {
+	margin: 0 auto;
+	padding: 2em 0 0 0;
+	font-size: 50px;
+}
+/*defaults*/
+html, body {
+ margin: 0px;
+ padding: 0px;
+ border: 0px;
+box-sizing: border-box;
+	max-width: 1900px;
+ }
+h1, h2, h3, h4, h5, h6 {
+	font-family:'Montserrat', 'sans-serif';
+}
+ a {
+	text-decoration: none;
+	color: white;
+}
+body {
+	font-family: 'Cardo';
+}
+li {
+	list-style: none;
+}
+hr {
+	margin: 0 auto;
+}
+button:hover {
+	cursor: pointer;
+}
+
+/*Column Styling*/
+.col-66 {
+	width: 66%;
+	float: left;
+}
+.col-33 {
+	width: 33%;
+	float: right;
+}
+.col-25 {
+	width: 24.5%;
+	display: inline-block;
+}
+.col-50 {
+	width: 49.5%;
+	display: inline
+}
+/*Background Effects*/
+.background-div {
+	position: absolute;
+
+}
+/*Animations*/
+.scroll-animate {
+	position: relative;
+	width: 300px;
+	
+}
+/*
+.in-view {
+	-webkit-transition: all 700ms linear;
+	-moz-transition: all 700ms linear;
+	-o-transition:  all 700ms linear;
+	transition:  all 700ms linear;
+	-webkit-transform: translate3d(50%, 0px, 0px);
+	-moz-transform: translate(50%, 0px, 0px);
+	-o-transform: translate(50%, 0px, 0px);
+	transform: translate3d(50%, 0px, 0px);
+	max-width: 50%;
+	margin: 0 auto;
+}
+*/
+/*header*/
+
+.header-wrapper{
+	width: 100%;
+	margin: 0 auto;
+	height: 30%;
+	background-color: #F6F6F6;
+}
+/*intro*/
+#intro h1{
+	position: relative;
+	padding: 1em 1em 1em 0;
+	font-size: 70px;
+	margin: 0 auto;
+}
+#intro p {
+	width:50%;
+	text-align: center;
+	font-size: 35px;
+	border-radius: 5px;
+	background-color: #D6E4F0;
+	padding: 1em;
+/*	margin: 0 0 0 200px;*/
+}
+#intro button {
+	position: relative;
+	text-align: center;
+	padding: 20px;
+	border-radius: 5px;
+	margin: 50px 0 20px 0;
+	background-color: transparent;
+}
+#intro button:hover {
+	background-color: #D6E4F0;
+	
+}
+#intro button:nth-of-type(2):hover{
+		background-color: #1E56A0;
+
+}
+#intro a {
+	color: black;
+	font-weight: 600;
+	font-size: 20px;
+}
+/*nav bar*/
+nav {
+	background-color: #1E56A0;
+	height: 60px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+nav ul {
+	margin: 0;
+	padding-top: 10px;
+	position: relative;
+}
+
+nav li{
+	display: inline;
+	vertical-align: center;
+	padding: 7px;
+	border: 2px black solid;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: 600;
+}
+nav li:hover {
+	background-color: black;
+	
+}
+
+/*About Me Section*/
+#about-me h2, h3, p {
+	text-align: center;
+}
+#about-me {
+	
+	height: 1000px;
+	background-color: #F6F6F6;
+}
+#about-me h1 {
+	margin: 0;
+	padding: 2em 0 0 0;
+	font-size: 50px;
+}
+#about-me h2 {
+font-size: 30px;
+padding: .8em;
+	
+}
+
+.about-me-col1 p {
+	font-size: 22px;
+	border: 2px solid black;
+	padding: 1em;
+	margin: 0 5em 0 5em;
+
+}
+#self-description {
+	background: linear-gradient(to right,  #aacde4, #3287be)
+}
+#self-description:hover {
+	background: linear-gradient(to right,  #f5edb5, #ffe522)
+}
+#lang-tech {
+	border: 2px solid black;
+	padding: .5em;
+	margin-right: 1em;
+	height: 540px;
+}
+#lang-tech p {
+font-size: 20px;
+	padding: 2px;
+	margin: 0 auto;
+}
+#lang-tech li {
+	font-size: 22px;
+	line-height: 30px;
+	text-align: center;
+	border: 2px solid black;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#lang-tech li:hover {
+background: linear-gradient(to right,  #aacde4, #3287be)
+}
+/*hidden divs*/ 
+.hidden {
+	display: none;
+}
+.showdiv {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 120px;
+	background: linear-gradient(to right,  #f5edb5, #ffe522);
+	text-align: center;
+}
+.showdiv a {
+	display: block;
+	padding: 5px;
+	vertical-align: center;
+	color: black;
+	font-weight: 600;
+}
+
+/*about me: call to action*/
+.action-buttons {
+	margin-left: 110px;
+	width: 100%;
+}
+.action-buttons div {
+	display: inline-block;
+	width: 48%;
+}
+.action-buttons h2, .action-buttons button{
+	display: inline-block;
+}
+
+.action-buttons button {
+	text-align: center;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: transparent;
+	width: 312px;
+	height:54px;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+} 
+.employers:hover{
+	background-color: #3287be;
+}
+.clients:hover {
+	background-color: #ffe522;
+}
+
+/*education*/
+#education {
+	border: 2px solid black;
+	font-size: 22px;
+	padding: 1em;
+	margin: 0 5em 0 5em;
+	background: linear-gradient(to right,  #aacde4, #3287be)
+}
+#education:hover {
+	background: linear-gradient(to right,  #f5edb5, #ffe522)
+}
+#education h3, #education p {
+	display: inline;
+	border: none;
+}
+
+/*Languages and Technologies*/
+
+.accordion {
+	margin-bottom: 100px;
+}
+/*projects*/
+
+#projects {
+	width: 100%;
+	height: 1000px;
+	background-color: #F6F6F6;
+	margin: 0 auto;
+}
+#projects h2, p {
+	text-align: center;
+}
+#projects h1 {
+	margin: 0;
+	padding: 2em 0 2em 0;
+	font-size: 50px;
+}
+.col-25.project {
+	background-color: #c7c7c7;
+}
+.col-25.project img {
+	width: 300px;
+	height: 150px;
+	text-align: center;
+}
+.col-25.project:hover {
+	opacity: .5;
+}
+/*Contact Me*/
+
+#contact {
+	width: 100%;
+	height: 300px;
+	background-color: #F6F6F6;
+	margin: 0 auto;
+}
+
+#contact h1, h2, p {
+	text-align: center;
+}
+#contact h1 {
+	font-size: 50px;
+	padding: 25px;
+	margin: 0 auto;
+}
+/*lang-tech*/

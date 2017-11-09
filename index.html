@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset ="utf-8">
+	<title>Devon's Website</title>
+	<link href= "styles/index.css" rel = "stylesheet" type = "text/css">
+	<link href="https://fonts.googleapis.com/css?family=Cardo|Montserrat" rel="stylesheet">
+	<script src = "functions/jquery-3.2.1.js"></script>
+	<script src = "functions/index.js"></script>
+</head>
+<body>
+	<header class = "header-wrapper">
+		<nav id = "nav">
+			<ul>
+				<li><a href = "#about-me">About Me</a></li>
+				<li><a href = "#education">Education</a></li>
+<!--				<li><a href = "#">Work Experience</a></li>-->
+				<li><a href = "#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<div class = "background-divs">
+		<div class = "background-div"></div>
+		<div class = "background-div"></div>
+		<div class = "background-div"></div>
+			</div>
+		<div id= "intro">
+			<h1>Devon Vaccarino</h1>
+			<p>Web Developer, Web Designer, and Overall Cool Person</p>
+			<button><a href ='#projects'>VIEW MY WORK</a></button>
+			<button><a href ='#contact'>GET IN CONTACT</a></button>
+			
+		</div>
+	</header>
+	<section id ="about-me">
+		<hr>
+		<h1  class = "scroll-animate" >About Me</h1>
+		
+		<div class="col-66 about-me-col1">
+			<h2>Who is this guy?</h2>
+			<p id="self-description">A self-taught, highly driven, and devilishly handsome junior developer looking to cut his teeth as a front-end developer.</p>
+			<h2>Education</h2>
+				<div id = "education">
+						<h3>UCLA</h3>
+						<p>Bachelor of Arts: Philosophy/Psychology</p>
+				</div>
+			<div class = "action-buttons">
+			<div>
+			<h2>Hiring Full Time?</h2>
+			<br>
+			<a href = "#"><button class ="employers">Download Resume</button></a>
+			</div>
+			<div>
+				<h2>Need Contract Work?</h2>
+				<br>			
+				<a href = "#contact"><button class = "clients">Get in Touch</button></a>
+			</div>
+			</div>
+		</div>
+		<div class = "col-33 about-me-col2">
+			<h2>Languages and Technologies</h2>
+			<ul id="lang-tech">
+				<li data-order = 0 id = "html">
+					HTML
+				</li>
+				<div id="htmldiv" class = "hidden">
+					<a href ='https://rems5678.github.io/celestialcitrus/'>Celestial Citrus</a>
+					<a href ='#'>Electronics Store</a>
+					<a href ='https://rems5678.github.io/Sample-Website/'>Styling Conference</a>
+					<a href = "#">Yoga Comforts</a>
+				</div>
+
+				<li data-order = 1 >CSS</li>
+				<div id="CSS" class = "hidden">
+					<a href ='https://rems5678.github.io/celestialcitrus/'>Celestial Citrus</a>
+					<a href ='#'>Electronics Store</a>
+					<a href ='https://rems5678.github.io/Sample-Website/'>Styling Conference</a>
+					<a href = "#">Yoga Comforts</a>
+				</div>
+			
+				<li data-order = 2 >Javascript</li>
+				<div id="Javascript" class = "hidden">
+					<a href ='https://rems5678.github.io/celestialcitrus/'>Celestial Citrus</a>
+					<a href ='#'>Electronics Store</a>
+					<a href ='https://rems5678.github.io/Sample-Website/'>Styling Conference</a>
+				</div>
+				<li data-order = 3 >PHP</li>
+				<div id="PHP" class = "hidden">
+					<a href ='#'>Electronics Store</a>
+					<a href = "#">Yoga Comforts</a>
+				</div>
+				<li data-order = 4 >MySQL</li>
+				<div id="MySQL" class = "hidden">
+					<a href ='#'>Electronics Store</a>
+				</div>
+				<li data-order = 5 >Angular</li>
+				<div class = "hidden">
+					<a>Coming Soon!</a>
+				</div>
+				<li data-order = 6 >Wordpress</li>
+				<div id="Express" class = "hidden">
+					<a>Yoga Comforts</a>
+				</div>
+				<li data-order = 7 >NodeJS</li>
+				<div id="NodeJS" class = "hidden">
+					<a>Coming Soon!</a>
+				</div>
+				<li data-order = 8 >Bootstrap</li>
+				<div id="Bootstrap" class = "hidden">
+					<a href ='#'>Electronics Store</a>
+				</div>
+				<li data-order = 9  >Semantic UI</li>
+				<div id="Semantic" class = "hidden">
+					<a href ='https://rems5678.github.io/celestialcitrus/'>Celestial Citrus</a>
+				</div>
+				<li data-order = 10 >MongoDB</li>
+				<div id="MongoDB" class = "hidden">
+					<a>Coming Soon!</a>
+				</div>				
+			</ul>
+		</div>
+	</section>
+	<section id = "projects">
+		<hr>
+		
+		<h1  class = "scroll-animate">Projects</h1>
+
+		<a href = "#">
+		<div class = "col-25 project">
+		<h2>Electronics Store</h2>
+			<p><img src = "img/Ecommerce.PNG"></p>
+		</div>
+		</a>
+		<a href = "#">
+		<div class = "col-25 project">
+		<h2>Yoga Comforts</h2>
+			<p><img src = "img/YogaComforts.PNG"></p>
+		</div>
+		</a>
+		
+		<a href = "https://rems5678.github.io/celestialcitrus/"><div class = "col-25 project">
+		<h2>Celestial Citrus </h2>			
+		<p><img src = "img/cassiwebsite1.PNG"></p>
+		</div>
+		</a>
+		
+		<a href = " https://rems5678.github.io/Sample-Website/">
+		<div class = "col-25 project ">
+		<h2>Styling Conference</h2>	
+		<p><img src = "img/stylingconference1.PNG"></p>
+		</div>
+		</a>
+	</section>
+	<hr>
+
+	<section id = "contact">
+		<div class = "background-divs">
+			<div class = "background-div"></div>
+			<div class = "background-div"></div>
+			<div class = "background-div"></div>
+		</div>
+		<h1>Get in Contact</h1>
+		<h2>Email: devonev92@gmail.com</h2>
+	</section>
+</body>
+</html>
