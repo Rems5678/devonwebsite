@@ -315,11 +315,10 @@ background: linear-gradient(to right,  #aacde4, #3287be)
 }
 
 /*media queries*/
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 768px) {
 	html, body {
 		width: 100%;
-		max-width: 768px;
-		
+		overflow-x: hidden;
 	}
 	#nav, #about-me, #projects, #contact {
 		width: 100%;
@@ -356,7 +355,7 @@ background: linear-gradient(to right,  #aacde4, #3287be)
 	html, body {
 		width: 100%;
 		max-width: 425px;
-		
+		overflow-x: hidden;
 	}
 	#nav ul {
 		width: 100%;
