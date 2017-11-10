@@ -19,9 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family:'Montserrat', 'sans-serif';
 	
 }
-h1, h2, h3, h4, h5, h6 
-{
-}
+
  a {
 	text-decoration: none;
 	color: white;
@@ -315,7 +313,7 @@ background: linear-gradient(to right,  #aacde4, #3287be)
 }
 
 /*media queries*/
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 464px) and (max-width: 768px) {
 	html, body {
 		width: 100%;
 		overflow-x: hidden;
@@ -328,18 +326,31 @@ background: linear-gradient(to right,  #aacde4, #3287be)
 		padding: 15px 0 15px 0;
 	}
 	#about-me {
-		height: 1500px;
+		height: 2000px;
 	}
 	#about-me h1 {
 		text-align: center;
 	}
+		#education p {
+		padding: 0;
+		margin: 0;
+			box-sizing: border-box;
+}
 	#about-me .action-buttons {
+		margin: 0;
+	}
+	.action-buttons div {
 		width: 49.5%;
+	}
+	.action-buttons h2 {
+		margin: 0;
+		padding: 0;
+		padding: 5px;
 	}
 	.action-buttons button {
 		margin: 0;
 		padding: 0;
-		width: 125px;
+		width: 100%;
 	}
 	#projects .project {
 		width: 49.5%;
@@ -351,10 +362,9 @@ background: linear-gradient(to right,  #aacde4, #3287be)
 	}
 
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 463px) {
 	html, body {
 		width: 100%;
-		max-width: 425px;
 		overflow-x: hidden;
 	}
 	#nav ul {
@@ -365,6 +375,9 @@ background: linear-gradient(to right,  #aacde4, #3287be)
 		padding: 2px;
 		width: 100%;
 		font-size: 16px;
+	}
+	#intro h1 {
+	font-size: 50px;	
 	}
 	#intro p{
 		width: 100%;
@@ -382,6 +395,7 @@ background: linear-gradient(to right,  #aacde4, #3287be)
 		padding: 5px;
 		
 	}
+
 	.action-buttons h2 {
 		font-size: 20px;
 	}
@@ -401,8 +415,5 @@ background: linear-gradient(to right,  #aacde4, #3287be)
 		width: 50%;
 		height: 25%;
 	}
-	#contact {
-		
-	}
-}
+
 }

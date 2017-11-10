@@ -80,8 +80,9 @@ $(document).ready(function(){
 	//contact me
 		}
 //tablet functions	
-if ($(window).width() <= 768 && $(window).width() >= 426) {
+if ($(window).width() <= 768 && $(window).width() >= 464) {
 	$("#projects .project").removeClass("col-25")
+	$("#about-me div").removeClass("col-66").removeClass("col-33");
 		//education
 	$("#lang-tech li").on("click", pushDown);
 	
@@ -123,8 +124,9 @@ if ($(window).width() <= 768 && $(window).width() >= 426) {
 }
 }
 	//smartphone functions
-if ($(window).width() < 426) {
+if ($(window).width() < 464) {
 	$("#projects .project").removeClass("col-25")
+	$("#about-me div").removeClass("col-66").removeClass("col-33");
 			//education
 	$("#lang-tech li").on("click", pushDown);
 	
@@ -135,7 +137,7 @@ if ($(window).width() < 426) {
 		$(evt.target).next().addClass("showdiv");
 	}
 			//scroll animations for sliding headers when scrolling past them.
-$("#about-me div").removeClass("col-66").removeClass("col-33");
+
 	
 	var $scrollAnim = $(".scroll-animate")
 	var $window = $(window)
