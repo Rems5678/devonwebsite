@@ -1,4 +1,6 @@
+
 /*mixins*/
+
 @mixin .section-header {
 	margin: 0 auto;
 	padding: 2em 0 0 0;
@@ -6,13 +8,19 @@
 }
 /*defaults*/
 html, body {
- margin: 0px;
- padding: 0px;
- border: 0px;
-box-sizing: border-box;
+ 	margin: 0;
+ 	padding: 0px;
+	border: 0px;
+	box-sizing: border-box;
+	overflow: auto;
+	width: 1900px;
  }
 h1, h2, h3, h4, h5, h6 {
 	font-family:'Montserrat', 'sans-serif';
+	
+}
+h1, h2, h3, h4, h5, h6 
+{
 }
  a {
 	text-decoration: none;
@@ -56,23 +64,9 @@ button:hover {
 /*Animations*/
 .scroll-animate {
 	position: relative;
-	width: 300px;
+	width: 250px;
 	
 }
-/*
-.in-view {
-	-webkit-transition: all 700ms linear;
-	-moz-transition: all 700ms linear;
-	-o-transition:  all 700ms linear;
-	transition:  all 700ms linear;
-	-webkit-transform: translate3d(50%, 0px, 0px);
-	-moz-transform: translate(50%, 0px, 0px);
-	-o-transform: translate(50%, 0px, 0px);
-	transform: translate3d(50%, 0px, 0px);
-	max-width: 50%;
-	margin: 0 auto;
-}
-*/
 /*header*/
 
 .header-wrapper{
@@ -81,6 +75,35 @@ button:hover {
 	height: 30%;
 	background-color: #F6F6F6;
 }
+/*nav bar*/
+nav {
+	background-color: #1E56A0;
+	height: 3.5em;
+	margin: 0;
+	padding-top: 10px;
+}
+nav ul {
+	margin: 0;
+	padding-top: 10px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+nav li{
+	display: inline;
+	vertical-align: center;
+	padding: 7px;
+	border: 2px black solid;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: 600;
+	box-sizing: border-box;
+}
+nav li:hover {
+	background-color: black;
+	
+}
+
 /*intro*/
 #intro h1{
 	position: relative;
@@ -89,13 +112,12 @@ button:hover {
 	margin: 0 auto;
 }
 #intro p {
-	width:50%;
+	width: 50%;
 	text-align: center;
 	font-size: 35px;
 	border-radius: 5px;
 	background-color: #D6E4F0;
 	padding: 1em;
-/*	margin: 0 0 0 200px;*/
 }
 #intro button {
 	position: relative;
@@ -109,40 +131,15 @@ button:hover {
 	background-color: #D6E4F0;
 	
 }
-#intro button:nth-of-type(2):hover{
+#intro button:even:hover{
 		background-color: #1E56A0;
 
 }
 #intro a {
+	position: relative;
 	color: black;
 	font-weight: 600;
 	font-size: 20px;
-}
-/*nav bar*/
-nav {
-	background-color: #1E56A0;
-	height: 60px;
-	margin: 0 auto;
-	padding-top: 10px;
-}
-nav ul {
-	margin: 0;
-	padding-top: 10px;
-	position: relative;
-}
-
-nav li{
-	display: inline;
-	vertical-align: center;
-	padding: 7px;
-	border: 2px black solid;
-	border-radius: 5px;
-	font-size: 20px;
-	font-weight: 600;
-}
-nav li:hover {
-	background-color: black;
-	
 }
 
 /*About Me Section*/
@@ -288,15 +285,15 @@ background: linear-gradient(to right,  #aacde4, #3287be)
 	padding: 2em 0 2em 0;
 	font-size: 50px;
 }
-.col-25.project {
+#projects .project {
 	background-color: #c7c7c7;
 }
-.col-25.project img {
+#projects .project img {
 	width: 300px;
 	height: 150px;
 	text-align: center;
 }
-.col-25.project:hover {
+#projects .project:hover {
 	opacity: .5;
 }
 /*Contact Me*/
@@ -316,4 +313,99 @@ background: linear-gradient(to right,  #aacde4, #3287be)
 	padding: 25px;
 	margin: 0 auto;
 }
-/*lang-tech*/
+
+/*media queries*/
+@media screen and (max-width: 768px) {
+	html, body {
+		width: 100%;
+		max-width: 768px;
+		
+	}
+	#nav, #about-me, #projects, #contact {
+		width: 100%;
+	}
+		#intro p{
+		width: 100%;
+		padding: 15px 0 15px 0;
+	}
+	#about-me {
+		height: 1500px;
+	}
+	#about-me h1 {
+		text-align: center;
+	}
+	#about-me .action-buttons {
+		width: 49.5%;
+	}
+	.action-buttons button {
+		margin: 0;
+		padding: 0;
+		width: 125px;
+	}
+	#projects {
+		
+	}
+	#projects .project {
+		width: 49.5%;
+		display: inline-block;
+	}
+	#projects .project img {
+		width: 50%;
+		height: 25%;
+	}
+	#contact {
+		
+	}
+}
+@media screen and (max-width: 425px) {
+	html, body {
+		width: 100%;
+		max-width: 425px;
+		
+	}
+	#nav, #about-me, #projects, #contact {
+		width: 
+	}
+	#nav li {
+		padding: 2px;
+	}
+	#intro p{
+		width: 100%;
+		padding: 0;
+	}
+	#about-me {
+		height: 2000px;
+	}
+	#about-me p, #education  {
+	margin: 0;
+	}
+	#about-me .action-buttons {
+		width: 100%;
+		margin: 0;
+		padding: 5px;
+		
+	}
+	.action-buttons h2 {
+		font-size: 20px;
+	}
+	.action-buttons button {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	#projects {
+		height: 1500px;
+	}
+	#projects .project {
+		width: 100%;
+		display: inline-block;
+	}
+	#projects .project img {
+		width: 50%;
+		height: 25%;
+	}
+	#contact {
+		
+	}
+}
+}
