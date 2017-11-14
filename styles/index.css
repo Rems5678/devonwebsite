@@ -13,7 +13,9 @@ html, body {
 	border: 0px;
 	box-sizing: border-box;
 	overflow: auto;
-	width: 1900px;
+	width: 100%;
+	min-width: 794px;
+	overflow-x: hidden;
  }
 h1, h2, h3, h4, h5, h6 {
 	font-family:'Montserrat', 'sans-serif';
@@ -74,6 +76,9 @@ button:hover {
 	background-color: #F6F6F6;
 }
 /*nav bar*/
+.nav-div {
+position: relative;
+}
 nav {
 	background-color: #1E56A0;
 	height: 3.5em;
@@ -83,7 +88,6 @@ nav {
 nav ul {
 	margin: 0;
 	padding-top: 10px;
-	position: relative;
 	box-sizing: border-box;
 }
 
@@ -112,6 +116,7 @@ nav li:hover {
 #intro p {
 	width: 50%;
 	text-align: center;
+	position: relative;
 	font-size: 35px;
 	border-radius: 5px;
 	background-color: #D6E4F0;
@@ -146,7 +151,7 @@ nav li:hover {
 }
 #about-me {
 	
-	height: 1000px;
+	height: 1200px;
 	background-color: #F6F6F6;
 }
 #about-me h1 {
@@ -176,7 +181,6 @@ padding: .8em;
 #lang-tech {
 	border: 2px solid black;
 	padding: .5em;
-	margin-right: 1em;
 	height: 540px;
 }
 #lang-tech p {
@@ -217,12 +221,18 @@ background: linear-gradient(to right,  #aacde4, #3287be)
 
 /*about me: call to action*/
 .action-buttons {
-	margin-left: 110px;
 	width: 100%;
 }
 .action-buttons div {
 	display: inline-block;
-	width: 48%;
+	padding-left: 10px;
+	width: 45%;
+}
+.action-buttons div:even {
+	float:left;
+}
+.action-buttons div:odd {
+	float: right;
 }
 .action-buttons h2, .action-buttons button{
 	display: inline-block;
@@ -233,7 +243,8 @@ background: linear-gradient(to right,  #aacde4, #3287be)
 	padding: 20px;
 	border-radius: 5px;
 	background-color: transparent;
-	width: 312px;
+	width: 100%;
+	max-width: 312px;
 	height:54px;
 	font-size: 20px;
 	font-weight: 700;
@@ -287,8 +298,8 @@ background: linear-gradient(to right,  #aacde4, #3287be)
 	background-color: #c7c7c7;
 }
 #projects .project img {
-	width: 300px;
-	height: 150px;
+	width: 90%;
+	height: 70%;
 	text-align: center;
 }
 #projects .project:hover {
@@ -313,6 +324,9 @@ background: linear-gradient(to right,  #aacde4, #3287be)
 }
 
 /*media queries*/
+@media screen and (max-width: 463px) {
+	
+}
 @media screen and (min-width: 464px) and (max-width: 768px) {
 	html, body {
 		width: 100%;

@@ -2,16 +2,18 @@ $(document).ready(function(){
 	//desktop functions
 		if ($(window).width() > 769 ) {
 			//nav bar
-		$("#nav ul").animate({marginLeft: "70%"}, 700)
+		$("#nav .nav-div").animate({left: "35%", right: 0}, 700, function() {
+			$("#nav .nav-div").css({});
+		})
 //intro div
-	$("#intro h1").animate({marginLeft: "76px"}, 700);
-	$("#intro p").animate({marginLeft: 200}, 700);
-	$("#intro a").animate({left: "700px"}, 700);
+	$("#intro h1").animate({left: "5%"}, 700);
+	$("#intro p").animate({left: "10%"}, 700);
+	$("#intro a").animate({left: "20%"});
 	$(".background-divs .background-div:eq(0)").animate({
 		borderRadius: '20px',
 	width:	'100px',
 	height: '100px',
-	left: '1400px',
+	left: '80%',
 	top: '300px',
 	now: '360px'}, {duration: 1000, step: function (now) {
 		$(this).css({transform: "rotate(" + now + "deg)", background:'#1E56A0'})
@@ -20,7 +22,7 @@ $(document).ready(function(){
 		borderRadius: '20px',
 	width:	'100px',
 	height: '100px',
-	left: '1550px',
+	left: '90%',
 	top: '150px',
 	now: '360px'}, {duration: 1000, step: function (now) {
 		$(this).css({transform: "rotate(" + now + "deg)", background:'#D6E4F0'})
@@ -29,7 +31,7 @@ $(document).ready(function(){
 		borderRadius: '20px',
 	width:	'100px',
 	height: '100px',
-	left: '1550px',
+	left: '90%',
 	top: '450px',
 	now: '360px'}, {duration: 1000, step: function (now) {
 		$(this).css({transform: "rotate(" + now + "deg)", background:'#D6E4F0'})
