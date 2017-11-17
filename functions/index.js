@@ -62,21 +62,27 @@ $(document).ready(function(){
 				$element.animate({left: center})
 
 			}
-//			else {
-//				$element.removeClass("in-view");
-//			}
 		})
 	}
-	//education
+	//lang and tech
 	$("#lang-tech li").on("click", pushDown);
-	
-	function pushDown(evt) {
+	var prev = null;
+		function pushDown(evt) {
+			//check if li tag was clicked twice, if so collapse the information below the tag.
+			//break out of function if the if statement is true
+			if(this==prev) {
+				$(this).next().toggleClass("showdiv");
+				return;
+			}
+			//check if there are any other divs displayed, if so remove them
 		if($("#lang-tech div").hasClass("showdiv")){
 			$("#lang-tech div").removeClass("showdiv");
 		}
+			//add class so the div displays underneath the li tag
 		$(evt.target).next().addClass("showdiv");
+		prev= this;
 	}
-	
+
 	//projects
 	
 	//contact me
@@ -85,14 +91,23 @@ $(document).ready(function(){
 if ($(window).width() <= 768 && $(window).width() >= 464) {
 	$("#projects .project").removeClass("col-25")
 	$("#about-me div").removeClass("col-66").removeClass("col-33");
-		//education
+	//lang and tech
 	$("#lang-tech li").on("click", pushDown);
-	
-	function pushDown(evt) {
+	var prev = null;
+		function pushDown(evt) {
+			//check if li tag was clicked twice, if so collapse the information below the tag.
+			//break out of function if the if statement is true
+			if(this==prev) {
+				$(this).next().toggleClass("showdiv");
+				return;
+			}
+			//check if there are any other divs displayed, if so remove them
 		if($("#lang-tech div").hasClass("showdiv")){
 			$("#lang-tech div").removeClass("showdiv");
 		}
+			//add class so the div displays underneath the li tag
 		$(evt.target).next().addClass("showdiv");
+		prev= this;
 	}
 		//scroll animations for sliding headers when scrolling past them.
 
@@ -129,14 +144,23 @@ if ($(window).width() <= 768 && $(window).width() >= 464) {
 if ($(window).width() < 464) {
 	$("#projects .project").removeClass("col-25")
 	$("#about-me div").removeClass("col-66").removeClass("col-33");
-			//education
+	//lang and tech
 	$("#lang-tech li").on("click", pushDown);
-	
+	var prev = null;
 		function pushDown(evt) {
+			//check if li tag was clicked twice, if so collapse the information below the tag.
+			//break out of function if the if statement is true
+			if(this==prev) {
+				$(this).next().toggleClass("showdiv");
+				return;
+			}
+			//check if there are any other divs displayed, if so remove them
 		if($("#lang-tech div").hasClass("showdiv")){
 			$("#lang-tech div").removeClass("showdiv");
 		}
+			//add class so the div displays underneath the li tag
 		$(evt.target).next().addClass("showdiv");
+		prev= this;
 	}
 			//scroll animations for sliding headers when scrolling past them.
 

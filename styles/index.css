@@ -314,13 +314,13 @@ background: linear-gradient(to right,  #aacde4, #3287be)
 	margin: 0 auto;
 }
 
-#contact h1, h2, p {
+#contact h2, p {
 	text-align: center;
 }
 #contact h1 {
 	font-size: 50px;
 	padding: 25px;
-	margin: 0 auto;
+	margin: 0;
 }
 
 /*media queries*/
